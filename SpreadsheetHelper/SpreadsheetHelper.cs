@@ -22,6 +22,9 @@ namespace SpreadsheetHelper
         /// Initializes an instance of Spreadsheet.
         /// </summary>
         public Spreadsheet() { doc = new SLDocument(); }
+
+        public SLDocument Document { get { return doc; } }
+
         private string FirstSheet = "";
         /// <summary>
         /// Creates a worksheet for the Spreadsheet Document of the 
